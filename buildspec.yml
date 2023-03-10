@@ -3,11 +3,11 @@ phases:
   pre_build:
     commands:
       - echo Restore started on `date`
-      - dotnet restore dreturns_app.csproj
+      - dotnet restore dreturns_app/dreturns_app.csproj
   build:
     commands:
       - echo Build started on `date`
-      - dotnet publish -c release -o ./build_output dreturns_app.csproj
+      - dotnet publish -c release -o ./build_output dreturns_app/dreturns_app.csproj
 artifacts:
   files:
     - CodeBuild-dreturns/build_output/**/*

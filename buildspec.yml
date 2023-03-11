@@ -13,3 +13,4 @@ artifacts:
     - CodeBuild-dreturns/build_output/**/*
     - scripts/**/*
     - appspec.yml
+    
